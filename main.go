@@ -9,7 +9,7 @@ import (
 )
 
 // SIZES all linux icons sizes
-var SIZES = []int{1024, 512, 256, 128, 86, 64, 32, 16}
+var SIZES = []int{1024, 512, 256, 128, 96, 64, 48, 32, 24, 16}
 
 func main() {
 	var (
@@ -32,6 +32,4 @@ func main() {
 	img := imgproc.Open(iPath)
 	engine := imgproc.New(name, img, SIZES, oPath)
 	engine.GenIcons()
-
-	<- make(chan bool)
 }

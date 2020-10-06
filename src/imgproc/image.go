@@ -45,7 +45,7 @@ func (i *Icons) genIco() {
 
 // `genPng` generate all linux png icons files
 func (i *Icons) genPng() {
-	if err := os.MkdirAll(path.Join(path.Dir(i.out), "/icons"), os.ModeDir.Perm()); err != nil {
+	if err := os.MkdirAll(path.Join(path.Dir(i.out), "/icons"), 7777); err != nil {
 		log.Fatalf("Fail to create linux icons dir: %v", err)
 		os.Exit(1)
 	}
