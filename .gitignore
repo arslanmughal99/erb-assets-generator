@@ -5,3 +5,6 @@
 /.vscode
 /wasm
 erb*
+darwin_erb
+linux_erb
+win32_erb.exe
